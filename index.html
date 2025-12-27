@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC LISALI FOOTBALL CLUB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Menu Button -->
+  <div class="menu-btn" onclick="toggleSidebar()">
+    <i class="bi bi-three-dots-vertical"></i>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="close-btn" onclick="toggleSidebar()" aria-label="Close Sidebar">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <a href="#home" onclick="toggleSidebar()"><i class="bi bi-house-door-fill"></i> Home</a>
+    <a href="#about" onclick="toggleSidebar()"><i class="bi bi-info-circle-fill"></i> About Us</a>
+    <a href="#products" onclick="toggleSidebar()"><i class="bi bi-shop"></i> Shop</a>
+    <a href="#blog" onclick="toggleSidebar()"><i class="bi bi-newspaper"></i> Blog</a>
+    <a href="#services" onclick="toggleSidebar()"><i class="bi bi-gear-fill"></i> Our Services</a>
+    <a href="#contact" onclick="toggleSidebar()"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" onclick="toggleCart()" aria-label="Close Cart">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+        <header class="site-header">
+            <div class="top-announcement">
+               
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav-container">
+                    <a class="brand" href="#home">⚽ FC LISALI</a>
+
+                    <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks" onclick="toggleNav()">
+                        <i class="bi bi-list" aria-hidden="true"></i>
+                        <span class="visually-hidden">Menu</span>
+                    </button>
+
+                    <div class="nav-links-wrapper" id="navLinks">
+                        <ul class="nav-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#fixtures">Fixtures</a></li>
+                            <li><a href="#table">League Table</a></li>
+                            <li><a href="#products">Shop</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <button class="cart-btn" onclick="toggleCart()" aria-label="Shopping Cart">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </button>
+                        <a class="nav-cta" href="#contact">Join Us</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        
+        
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <marquee behavior="left" direction=""><h1>Welcome to FC LISALI, The Club Of the people</h1></marquee>
+                <p>A team of love, and transformation soccer is our pashion. We own it to transformed soccer. Soccer is all we have.</p>
+                <a href="Amazon.com" class="hero-btn">Plan Your Visit</a>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta" id="visit">
+            <h2>You Are Always Welcome</h2>
+            <p>Joined FC Lisali now and enjoyed the best of soccer.</p>
+            <a href="#contact" class="cta-btn">Contact Us</a>
+        </section>
+
+   <marquee behavior="" direction=""><p>Welcome to our community! Where talents meet opportunity.</p></marquee>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our team is open and accessabe to the public.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-vision-card">
+                        <h3>Our Mission</h3>
+                        <p>To spread the love of God, foster spiritual growth, and serve our community with compassion and dedication. We strive to create a welcoming environment where everyone can experience God's grace and find hope in His word.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-vision-card">
+                        <h3>Our Vision</h3>
+                        <p>To be a beacon of hope and transformation in our community, building a church family that reflects God's love through worship, fellowship, and outreach. We envision a place where faith is strengthened, lives are changed, and God's kingdom is advanced.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <br>
+
+<section id="fixtures" class="fixtures-section">
+    <div class="container">
+        <h2>Upcoming Fixtures</h2>
+        <p>Check out our next matches and support FC LISALI!</p>
+        
+        <div class="fixtures-grid">
+            <div class="fixture-card">
+                <div class="fixture-date">12 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <img src="./images/church-united.png" alt="Church United FC" class="team-badge">
+                        <span class="team-name">Church United FC</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <img src="./images/faith-stars.png" alt="Faith Stars FC" class="team-badge">
+                        <span class="team-name">Faith Stars FC</span>
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 4:00 PM</div>
+                <div class="fixture-venue">Venue: Tusa Field</div>
+            </div>
+            
+            <div class="fixture-card">
+                <div class="fixture-date">15 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <img src="./images/hope-warriors.png" alt="Hope Warriors" class="team-badge">
+                        <span class="team-name">Hope Warriors</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <span class="team-name">Victory Lions</span>
+                        <img src="./images/victory-lions.png" alt="Victory Lions" class="team-badge">
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 5:30 PM</div>
+                <div class="fixture-venue">Venue: Community Stadium</div>
+            </div>
+            
+            <div class="fixture-card">
+                <div class="fixture-date">18 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <img src="./images/church-united.png" alt="Church United FC" class="team-badge">
+                        <span class="team-name">Church United FC</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <img src="./images/hope-warriors.png" alt="Hope Warriors" class="team-badge">
+                        <span class="team-name">Hope Warriors</span>
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 3:00 PM</div>
+                <div class="fixture-venue">Venue: Tusa Field</div>
+            </div>
+            
+            <div class="fixture-card">
+                <div class="fixture-date">21 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <img src="./images/faith-stars.png" alt="Faith Stars FC" class="team-badge">
+                        <span class="team-name">Faith Stars FC</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <img src="./images/hope-warriors.png" alt="Hope Warriors" class="team-badge">
+                        <span class="team-name">Hope Warriors</span>
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 2:00 PM</div>
+                <div class="fixture-venue">Venue: Tusa Field</div>
+            </div>
+            
+            <div class="fixture-card">
+                <div class="fixture-date">24 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <img src="./images/church-united.png" alt="Church United FC" class="team-badge">
+                        <span class="team-name">Church United FC</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <span class="team-name">FC LISALI</span>
+                        <img src="./images/hope-warriors.png" alt="FC LISALI" class="team-badge">
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 4:30 PM</div>
+                <div class="fixture-venue">Venue: Community Stadium</div>
+            </div>
+            
+            <div class="fixture-card">
+                <div class="fixture-date">27 Jan 2026</div>
+                <div class="fixture-match">
+                    <div class="team home-team">
+                        <span class="team-name">FC LISALI</span>
+                        <img src="./images/faith-stars.png" alt="FC LISALI" class="team-badge">
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team away-team">
+                        <img src="./images/church-united.png" alt="Church United FC" class="team-badge">
+                        <span class="team-name">Church United FC</span>
+                    </div>
+                </div>
+                <div class="fixture-time">Kick-off: 6:00 PM</div>
+                <div class="fixture-venue">Venue: Tusa Field</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+
+
+<section id="table" class="league-section">
+    <h2>LFA 2025 Gardnersville Third Division League</h2>
+
+    <div class="table-container">
+        <table class="league-table" id="leagueTable">
+            <thead>
+                <tr>
+                    <th>LFA 2025 Third Division League</th>
+                    <th>Club</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GD</th>
+                    <th>Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/church-united.png" alt="Church United">
+                        Young Guner
+                    </td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>+12</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        Young Star
+                    </td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Pepper FC
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        J United
+                    </td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        FC LISALI
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        New Georgia FC
+                    </td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Fatu FC
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        Discourage FC
+                    </td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Hope Warriors
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        Faith Stars FC
+                    </td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Hope Warriors
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        Faith Stars FC
+                    </td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Hope Warriors
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/faith-stars.png" alt="Faith Stars">
+                        Faith Stars FC
+                    </td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+9</td>
+                    <td class="points"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="club">
+                        <img src="images/hope-warriors.png" alt="Hope Warriors">
+                        Hope Warriors
+                    </td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+4</td>
+                    <td class="points"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="videos" class="videos-section">
+    <div class="container">
+        <h2>Game Highlights</h2>
+        <p>Watch past game highlights and download them to share with fans!</p>
+        
+        <div class="videos-grid">
+            <div class="video-item">
+                <h3>Match vs Faith Stars - October 2025</h3>
+                <video controls width="100%" height="240">
+                    <source src="videos/highlight1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="videos/highlight1.mp4" download class="download-btn">Download Highlight</a>
+            </div>
+            
+            <div class="video-item">
+                <h3>Match vs Hope Warriors - September 2025</h3>
+                <video controls width="100%" height="240">
+                    <source src="videos/highlight2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="videos/highlight2.mp4" download class="download-btn">Download Highlight</a>
+            </div>
+            
+            <div class="video-item">
+                <h3>Championship Final - August 2025</h3>
+                <video controls width="100%" height="240">
+                    <source src="videos/highlight3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="videos/highlight3.mp4" download class="download-btn">Download Highlight</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="players" class="players-section">
+    <div class="container">
+        <h2>Our Team Players</h2>
+        <p>Meet the talented players of FC LISALI.</p>
+        
+        <div class="players-grid">
+            <div class="player-card" style="--i:1">
+                <img src="./images/592768812_1567787801083763_5816689558962981001_n.jpg" alt="Player">
+                <h3>John Doe</h3>
+                <p>Goalkeeper</p>
+                <span class="player-number">1</span>
+            </div>
+            <div class="player-card" style="--i:2">
+                <img src="./images/597794801_1549465322926958_5214973162855134762_n.jpg" alt="Player">
+                <h3>Jane Smith</h3>
+                <p>Defender</p>
+                <span class="player-number">2</span>
+            </div>
+            <div class="player-card" style="--i:3">
+                <img src="./images/598153086_846248744981974_2047541839457471860_n.jpg" alt="Player">
+                <h3>Mike Johnson</h3>
+                <p>Defender</p>
+                <span class="player-number">3</span>
+            </div>
+            <div class="player-card" style="--i:4">
+                <img src="./images/598550395_829806680051084_197145487118888929_n.jpg" alt="Player">
+                <h3>Sarah Wilson</h3>
+                <p>Defender</p>
+                <span class="player-number">4</span>
+            </div>
+            <div class="player-card" style="--i:5">
+                <img src="./images/598656298_874299028379220_5112593259379067873_n.jpg" alt="Player">
+                <h3>David Brown</h3>
+                <p>Defender</p>
+                <span class="player-number">5</span>
+            </div>
+            <div class="player-card" style="--i:6">
+                <img src="./images/600357121_846598198166870_733723613530020943_n.jpg" alt="Player">
+                <h3>Emily Davis</h3>
+                <p>Midfielder</p>
+                <span class="player-number">6</span>
+            </div>
+            <div class="player-card" style="--i:7">
+                <img src="./images/601535018_2378462995960641_6018663534265185150_n.jpg" alt="Player">
+                <h3>Chris Miller</h3>
+                <p>Midfielder</p>
+                <span class="player-number">7</span>
+            </div>
+            <div class="player-card" style="--i:8">
+                <img src="./images/605311950_839395085755105_3934971165029616498_n.jpg" alt="Player">
+                <h3>Lisa Garcia</h3>
+                <p>Midfielder</p>
+                <span class="player-number">8</span>
+            </div>
+            <div class="player-card" style="--i:9">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Tom Anderson</h3>
+                <p>Forward</p>
+                <span class="player-number">9</span>
+            </div>
+            <div class="player-card" style="--i:10">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Amy Taylor</h3>
+                <p>Forward</p>
+                <span class="player-number">10</span>
+            </div>
+            <div class="player-card" style="--i:11">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Robert Lee</h3>
+                <p>Midfielder</p>
+                <span class="player-number">11</span>
+            </div>
+            <div class="player-card" style="--i:12">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Karen White</h3>
+                <p>Defender</p>
+                <span class="player-number">12</span>
+            </div>
+            <div class="player-card" style="--i:13">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Paul Harris</h3>
+                <p>Midfielder</p>
+                <span class="player-number">13</span>
+            </div>
+            <div class="player-card" style="--i:14">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Nancy Clark</h3>
+                <p>Forward</p>
+                <span class="player-number">14</span>
+            </div>
+            <div class="player-card" style="--i:15">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Mark Lewis</h3>
+                <p>Defender</p>
+                <span class="player-number">15</span>
+            </div>
+            <div class="player-card" style="--i:16">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Laura Walker</h3>
+                <p>Midfielder</p>
+                <span class="player-number">16</span>
+            </div>
+            <div class="player-card" style="--i:17">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Steven Hall</h3>
+                <p>Forward</p>
+                <span class="player-number">17</span>
+            </div>
+            <div class="player-card" style="--i:18">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Betty Young</h3>
+                <p>Defender</p>
+                <span class="player-number">18</span>
+            </div>
+            <div class="player-card" style="--i:19">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>George King</h3>
+                <p>Midfielder</p>
+                <span class="player-number">19</span>
+            </div>
+            <div class="player-card" style="--i:20">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Helen Wright</h3>
+                <p>Forward</p>
+                <span class="player-number">20</span>
+            </div>
+            <div class="player-card" style="--i:21">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Frank Lopez</h3>
+                <p>Defender</p>
+                <span class="player-number">21</span>
+            </div>
+            <div class="player-card" style="--i:22">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Diana Hill</h3>
+                <p>Midfielder</p>
+                <span class="player-number">22</span>
+            </div>
+            <div class="player-card" style="--i:23">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Brian Scott</h3>
+                <p>Forward</p>
+                <span class="player-number">23</span>
+            </div>
+            <div class="player-card" style="--i:24">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Alice Green</h3>
+                <p>Defender</p>
+                <span class="player-number">24</span>
+            </div>
+            <div class="player-card" style="--i:25">
+                <img src="./images/image-1 (1).jpg" alt="Player">
+                <h3>Edward Adams</h3>
+                <p>Goalkeeper</p>
+                <span class="player-number">25</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="coaches" class="coaches-section">
+    <div class="container">
+        <h2>Our Coaches and Staff</h2>
+        <p>Meet the dedicated professionals behind FC LISALI's success.</p>
+        
+        <div class="coaches-grid">
+            <div class="coach-card" style="--i:1">
+                <img src="./images/image-1 (1).jpg" alt="Coach">
+                <h3>Johnathan Coach</h3>
+                <p>Head Coach</p>
+                <div class="coach-info">
+                    <span>Experience: 15 years</span>
+                </div>
+            </div>
+            <div class="coach-card" style="--i:2">
+                <img src="./images/image-1 (1).jpg" alt="Coach">
+                <h3>Maria Assistant</h3>
+                <p>Assistant Coach</p>
+                <div class="coach-info">
+                    <span>Specialty: Tactics</span>
+                </div>
+            </div>
+            <div class="coach-card" style="--i:3">
+                <img src="./images/image-1 (1).jpg" alt="Coach">
+                <h3>Carlos Fitness</h3>
+                <p>Fitness Coach</p>
+                <div class="coach-info">
+                    <span>Focus: Conditioning</span>
+                </div>
+            </div>
+            <div class="coach-card" style="--i:4">
+                <img src="./images/image-1 (1).jpg" alt="Staff">
+                <h3>Sarah Manager</h3>
+                <p>Team Manager</p>
+                <div class="coach-info">
+                    <span>Role: Logistics</span>
+                </div>
+            </div>
+            <div class="coach-card" style="--i:5">
+                <img src="./images/image-1 (1).jpg" alt="Staff">
+                <h3>David Physio</h3>
+                <p>Physiotherapist</p>
+                <div class="coach-info">
+                    <span>Expertise: Injury Rehab</span>
+                </div>
+            </div>
+            <div class="coach-card" style="--i:6">
+                <img src="./images/image-1 (1).jpg" alt="Staff">
+                <h3>Linda Analyst</h3>
+                <p>Video Analyst</p>
+                <div class="coach-info">
+                    <span>Tools: Performance Analysis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <br>
+  
+
+   
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please reach out to us through the form below or contact us directly.</p>
+            
+            <div class="form-container">
+                <form id="contactForm" onsubmit="return submitForm(event)">
+                    <h3>Contact Form</h3>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <form id="signupForm" onsubmit="return signup(event)">
+                    <h3>Sign Up</h3>
+                    <input type="text" id="signupName" placeholder="Your Name" required>
+                    <input type="email" id="signupEmail" placeholder="Your Email" required>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <form id="signinForm" onsubmit="return signin(event)">
+                    <h3>Sign In</h3>
+                    <input type="email" id="signinEmail" placeholder="Your Email" required>
+                    <input type="password" id="signinPassword" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <br>
+
+<section id="blog" class="blog-section">
+    <div class="container">
+        <h2>Latest News & Blog</h2>
+        <p>Stay updated with the latest news, match reports, and insights from FC LISALI.</p>
+        
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="./images/barner.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3>Exciting Upcoming Season</h3>
+                    <p class="blog-date">December 28, 2025</p>
+                    <p>Get ready for an thrilling season ahead with FC LISALI. Our team is prepared to dominate the league.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="blog-post">
+                <img src="./images/orange.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3>Player Spotlight: John Doe</h3>
+                    <p class="blog-date">December 25, 2025</p>
+                    <p>Learn more about our star goalkeeper, John Doe, and his journey with the club.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="blog-post">
+                <img src="./images/telsa-1.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3>Match Report: vs Faith Stars</h3>
+                    <p class="blog-date">December 20, 2025</p>
+                    <p>A detailed report of our recent match against Faith Stars FC.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="products" class="products-section">
+    <div class="container">
+        <h2>Official FC LISALI Merchandise</h2>
+        <p>Show your support with our official gear!</p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="./images/barner.jpg" alt="Jersey" class="product-image">
+                <div class="product-info">
+                    <h3>Home Jersey</h3>
+                    <p class="price">$50.00</p>
+                    <div class="variations">
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                        <label for="color1">Color:</label>
+                        <select id="color1">
+                            <option>Blue</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="./images/orange.jpg" alt="Cap" class="product-image">
+                <div class="product-info">
+                    <h3>Team Cap</h3>
+                    <p class="price">$25.00</p>
+                    <div class="variations">
+                        <label for="size2">Size:</label>
+                        <select id="size2">
+                            <option>One Size</option>
+                        </select>
+                        <label for="color2">Color:</label>
+                        <select id="color2">
+                            <option>Orange</option>
+                            <option>Blue</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="./images/telsa-1.jpg" alt="Scarf" class="product-image">
+                <div class="product-info">
+                    <h3>Club Scarf</h3>
+                    <p class="price">$30.00</p>
+                    <div class="variations">
+                        <label for="size3">Size:</label>
+                        <select id="size3">
+                            <option>One Size</option>
+                        </select>
+                        <label for="color3">Color:</label>
+                        <select id="color3">
+                            <option>Blue & White</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="checkout-section">
+            <h3>Secure Checkout</h3>
+            <div id="checkoutSummary" style="display: none;">
+                <h4>Order Summary</h4>
+                <div id="orderItems"></div>
+                <p><strong>Total: $<span id="orderTotal">0.00</span></strong></p>
+            </div>
+            <form id="checkoutForm" onsubmit="return handleCheckout(event)">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="address" placeholder="Shipping Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="zipcode" placeholder="ZIP Code" required>
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" id="cardNumber" placeholder="Card Number" required style="flex: 2;">
+                    <input type="text" id="expiry" placeholder="MM/YY" required style="flex: 1;">
+                    <input type="text" id="cvv" placeholder="CVV" required style="flex: 1;">
+                </div>
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <br>
+<section class="banner">
+    <marquee behavior="Right direction"><h1>Our Sponsers</h1></marquee>
+  <div class="slider">
+    <div class="slides active">
+      <img src="images/orange.jpg" alt="Sponsor 1">
+    </div>
+    <div class="slides">
+      <img src="images/Orangeliberia-1.png" alt="Sponsor 2">
+    </div>
+    <div class="slides">
+      <img src="images/telsa-1.jpg" alt="Sponsor 3">
+    </div>
+    
+    <div class="slides">
+  <img src="images/Orangeliberia-1.png" alt="New Sponsor">
+</div>
+
+<div class="slides">
+  <img src="images/orange.jpg" alt="New Sponsor">
+</div>
+<div class="slides">
+  <img src="images/telsa-1.jpg" alt="New Sponsor">
+</div>
+
+<div class="slides">
+  <img src="images/orange.jpg" alt="New Sponsor">
+    <p>orange</p>
+</div>
+
+<div class="slides">
+  <img src="images/telsa-1.jpg" alt="New Sponsor">
+    <p>orange</p>
+</div>
+
+<div class="slides">
+  <img src="images/Orangeliberia-1.png" alt="New Sponsor">
+    <p>orange</p>
+</div>
+
+<div class="slides">
+  <img src="images/orange.jpg" alt="New Sponsor">
+    <p>orange</p>
+</div>
+
+<div class="slides">
+  <img src="images/Orangeliberia-1.png" alt="New Sponsor">
+  <p>orange</p>
+</div>
+
+
+    <!-- Navigation Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+ <!-- Navigation Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+ <!-- Navigation Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+    <br>
+
+
+
+                    
+<script>
+const rows = document.querySelectorAll("#leagueTable tbody tr");
+
+let teams = [];
+
+rows.forEach(row => {
+    const wins = parseInt(row.children[3].textContent);
+    const draws = parseInt(row.children[4].textContent);
+    const points = (wins * 3) + draws;
+
+    row.querySelector(".points").textContent = points;
+
+    teams.push({
+        row: row,
+        points: points,
+        gd: parseInt(row.children[6].textContent)
+    });
+});
+
+// Sort by points then goal difference
+teams.sort((a, b) => b.points - a.points || b.gd - a.gd);
+
+// Apply ranking & highlight
+teams.forEach((team, index) => {
+    team.row.children[0].textContent = index + 1;
+
+    if (index === 0) team.row.classList.add("top-1");
+    if (index === 1) team.row.classList.add("top-2");
+    if (index === 2) team.row.classList.add("top-3");
+});
+</script>
+
+
+
+      <br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>FC LISAL</h3>
+                    <p>Foot Ball Club</p>
+                    <p>The Team Of The People.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Info</h3>
+                    <p>Address: New Geargia Estate, Tusa Field</p>
+                    <p>Phone: 0779147132</p>
+                    <p>Email: fclisali1000@@gmail.com</p>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <a href="https://facebook.com/fclisali" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/fclisali" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="https://wa.me/0779147132" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://instagram.com/fclisali" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 CF Lisali. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+</body>
+</html>
